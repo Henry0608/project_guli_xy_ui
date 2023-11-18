@@ -58,6 +58,7 @@
 
     <el-table-column label="头衔" width="80">
       <template slot-scope="scope">
+        <!--三元表达式， 双等号只比较值，三等号即比较值又比较类型-->
         {{ scope.row.level===1?'高级讲师':'首席讲师' }}
       </template>
     </el-table-column>
